@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pelatihan Gatau Apa</string>
+    <string name="hello">Hello Lulu,</string>
+    <string name="pesan">Kamu masih error ya? wkwk</string>
+    <string name="nim">NIM</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="biodata_nim">NIM</string>
+    <string name="biodata_nama_lengkap">Nama Lengkap</string>
+    <string name="biodata_program_studi">Program Studi</string>
+    <string name="biodata_tahun_masuk">Tahun Masuk</string>
+    <string name="biodata_status">Status</string>
+    <string name="biodata_semester">Semester</string>
+    <string name="or">Or</string>
+    <string name="register">Register</string>
+</resources>
