@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pelatihan Gatau Apa</string>
+    <string name="hello">Hello Lulu,</string>
+    <string name="pesan">Kamu masih error ya? wkwk</string>
+    <string name="nim">NIM</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+</resources>
