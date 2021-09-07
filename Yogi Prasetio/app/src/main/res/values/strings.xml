@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Training App</string>
+    <string name="nim">NIM</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="name">Name</string>
+    <string name="prodi">Prodi</string>
+    <string name="tahun">Tahun</string>
+    <string name="status">Status</string>
+    <string name="periode_masuk">Periode Masuk</string>
+    <string name="by_yogi_prasetio">by Yogi Prasetio</string>
+    <string name="tanggal_masuk">Tanggal Masuk</string>
+    <string name="gelombang">Gelombang</string>
+    <string name="jalur_pendaftaran">Jalur Pendaftaran</string>
+    <string name="jenis_pendaftaran">Jenis Pendaftaran</string>
+</resources>

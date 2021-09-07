@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Biodata">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_profile">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name">
+            <TextView
+                android:id="@+id/tv_nim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nim"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etNim"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/prodi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nim">
+            <TextView
+                android:id="@+id/tv_prodi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prodi"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etProdi"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/prodi">
+            <TextView
+                android:id="@+id/tv_tahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tahun"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etTahun"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tahun">
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etStatus"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status">
+            <TextView
+                android:id="@+id/tv_masuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/periode_masuk"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etMasuk"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jenis_pendaftaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/masuk">
+            <TextView
+                android:id="@+id/tv_jenis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jenis_pendaftaran"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etJenis"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jalur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/jenis_pendaftaran">
+            <TextView
+                android:id="@+id/tv_jalur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jalur_pendaftaran"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etJalur"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gelombang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/jalur">
+            <TextView
+                android:id="@+id/tv_gelombang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gelombang"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etGelombang"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gelombang">
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tanggal_masuk"
+                android:textSize="14sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+            <EditText
+                android:id="@+id/etTanggal"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:backgroundTint="@color/blue_500"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
